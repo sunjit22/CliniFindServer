@@ -23,6 +23,7 @@ const updateUser = (user) =>
 const deleteUser = (userId) =>
   userModel.deleteOne({_id: userId});
 
+
 module.exports = {
   findByUsername, findAllUsers, findUserById,
   findByUsernameAndPassword,
