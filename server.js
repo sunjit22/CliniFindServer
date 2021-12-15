@@ -23,6 +23,8 @@ app.use(session({
   cookie: {}
 }));
 
+require('./trials/trials-controller')(app);
+
 const mongoose = require('mongoose');
 mongoose.connect(CONSTANTS.MONGODB_URL);
 

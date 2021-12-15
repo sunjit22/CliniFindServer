@@ -6,5 +6,6 @@ const userSchema = mongoose.Schema({
   email: String,
   firstName: String,
   lastName: String,
+  bookmarks : []
 }, {collection: 'users'});
 module.exports = userSchema;
